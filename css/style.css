@@ -1,0 +1,140 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+    background-color:rgb(64, 145, 238);
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    color: black;
+    font-size: 50px;
+}
+.border{
+    border: 2px solid black;
+    height: 200px;
+    width: 450px;
+    margin-top: 200px;
+    border-radius: 10px;
+    background-color: white;
+    border-color: navajowhite;
+    box-shadow: 3px 3px 32px red;
+}
+.match{
+    display:inline-flex ;
+    justify-content: end;
+    align-items: flex-end;
+    margin-top: 150px;
+    gap: 60px;
+}
+.player #pvp{
+    padding: 22px 12px 15px 15px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 1000px;
+}
+.player:hover{
+    transform: scale(1.1);
+}
+.computer:hover{
+    transform: scale(1.1);
+}
+.computer #pvc{
+    padding: 24px 9px 10px 14px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 7px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    font-weight: 1000px;
+}
+#pvp:hover{
+    box-shadow: 2px 2px 15px red;
+}
+#pvc:hover{
+    box-shadow: 2px 2px 15px red;
+}
+@media (max-width: 600px) {
+    .heading {
+        font-size: 30px;
+        height: 30vh;
+    }
+
+    .border {
+        width: 90%;
+        height: 150px;
+        margin-top: 50px;
+    }
+
+    .match {
+        flex-direction: row;
+        margin-top: 50px;
+        gap: 20px;
+    }
+    .computer #pvc {
+        font-size: 14px;
+        padding: 15px 10px;
+    }
+
+    .player #pvp{
+        font-size: 14px;
+        padding: 15px 21px;
+    }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+    .heading {
+        font-size: 40px;
+        height: 50vh;
+    }
+
+    .border {
+        width: 80%;
+        height: 180px;
+        margin-top: 100px;
+    }
+
+    .match {
+        margin-top: 100px;
+        gap: 40px;
+    }
+
+    .player #pvp, .computer #pvc {
+        font-size: 15px;
+        padding: 18px 10px;
+    }
+}
+@media (min-width: 769px) {
+    .heading {
+        font-size: 50px;
+        height: 70vh;
+    }
+
+    .border {
+        width: 450px;
+        height: 200px;
+        margin-top: 200px;
+    }
+
+    .match {
+        margin-top: 150px;
+        gap: 60px;
+    }
+
+    .player #pvp, .computer #pvc {
+        font-size: 16px;
+        padding: 24px 14px;
+    }
+}

@@ -1,0 +1,178 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: arial;
+  background-color:rgb(64, 145, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.tic{
+  display: grid;
+  grid-template-columns: repeat(3,100px);
+  grid-template-rows: repeat(3,100px);
+}
+.cells {
+  width: 100px;
+  height: 100px;
+  font-size: 45px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 2px solid black;
+  font-weight: bold;
+}
+.score{
+display:flex;
+justify-content: center;
+align-items: center;
+margin-top: 70px;
+text-align: center;
+gap: 100px;
+font-size: 20px;
+}
+.disabled{
+pointer-events: none;
+}
+.hide{
+display: none;
+
+}
+.border{
+border: 1.5px solid black;
+padding: 9px 25px 8px 25px;
+}
+
+.status{
+color: white;
+font-size: 22px;
+margin-top: 1px;
+}
+#restart{
+padding: 5px 5px 5px 5px;
+font-size: 19px;
+color: black;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.5s ease
+}
+#restart:hover{
+  transform: scale(105%,105%);
+}
+#restart.active{
+  background-color: red;
+}
+#new.active{
+  background-color: green;
+}
+#new{
+padding: 5px 5px 5px 5px;
+font-size: 19px;
+color: black;
+border-radius: 8px;
+cursor: pointer;
+transition:  0.5s ease
+}
+#new:hover{
+  transform: scale(105%,105%);
+}
+#buttons{
+margin-top: 90px;
+}
+@media (max-width: 600px) {
+  .tic {
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+  }
+
+  .cells {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+  }
+
+  .score {
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 30px;
+    font-size: 18px;
+  }
+
+  .status {
+    font-size: 18px;
+  }
+
+  #restart, #new {
+    font-size: 16px;
+    padding: 4px;
+  }
+
+  #buttons {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  .tic {
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(3, 90px);
+  }
+
+  .cells {
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+  }
+
+  .score {
+    margin-top: 50px;
+    gap: 50px;
+    font-size: 19px;
+  }
+
+  .status {
+    font-size: 20px;
+  }
+
+  #restart, #new {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  #buttons {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 769px) {
+  .tic {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+  }
+
+  .cells {
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+  }
+
+  .score {
+    margin-top: 70px;
+    gap: 100px;
+    font-size: 20px;
+  }
+
+  .status {
+    font-size: 22px;
+  }
+
+  #restart, #new {
+    font-size: 19px;
+  }
+
+  #buttons {
+    margin-top: 90px;
+  }
+}
