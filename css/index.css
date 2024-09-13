@@ -1,27 +1,30 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: arial;
-    background-color:rgb(64, 145, 238);
+    background-color: rgb(64, 145, 238);
     justify-content: center;
     align-items: center;
 }
-.main{
-    display:flex;
+
+.main {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.heading{
-    display:flex;
+
+.heading {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 70vh;
     color: black;
     font-size: 50px;
 }
-.border{
+
+.border {
     border: 2px solid black;
     height: 200px;
     width: 450px;
@@ -31,14 +34,16 @@ body{
     border-color: navajowhite;
     box-shadow: 3px 3px 32px red;
 }
-.match{
-    display:inline-flex ;
+
+.match {
+    display: inline-flex;
     justify-content: end;
     align-items: flex-end;
     margin-top: 150px;
     gap: 60px;
 }
-.player #pvp{
+
+.player #pvp {
     padding: 22px 12px 15px 15px;
     text-align: center;
     font-size: 16px;
@@ -46,13 +51,16 @@ body{
     cursor: pointer;
     font-weight: 1000px;
 }
-.player:hover{
+
+.player:hover {
     transform: scale(1.1);
 }
-.computer:hover{
+
+.computer:hover {
     transform: scale(1.1);
 }
-.computer #pvc{
+
+.computer #pvc {
     padding: 24px 9px 10px 14px;
     text-align: center;
     font-size: 16px;
@@ -61,12 +69,15 @@ body{
     cursor: pointer;
     font-weight: 1000px;
 }
-#pvp:hover{
+
+#pvp:hover {
     box-shadow: 2px 2px 15px red;
 }
-#pvc:hover{
+
+#pvc:hover {
     box-shadow: 2px 2px 15px red;
 }
+
 @media (max-width: 600px) {
     .heading {
         font-size: 30px;
@@ -84,16 +95,18 @@ body{
         margin-top: 50px;
         gap: 20px;
     }
+
     .computer #pvc {
         font-size: 14px;
         padding: 15px 10px;
     }
 
-    .player #pvp{
+    .player #pvp {
         font-size: 14px;
         padding: 15px 21px;
     }
 }
+
 @media (min-width: 601px) and (max-width: 768px) {
     .heading {
         font-size: 40px;
@@ -111,11 +124,13 @@ body{
         gap: 40px;
     }
 
-    .player #pvp, .computer #pvc {
+    .player #pvp,
+    .computer #pvc {
         font-size: 15px;
         padding: 18px 10px;
     }
 }
+
 @media (min-width: 769px) {
     .heading {
         font-size: 50px;
@@ -133,7 +148,8 @@ body{
         gap: 60px;
     }
 
-    .player #pvp, .computer #pvc {
+    .player #pvp,
+    .computer #pvc {
         font-size: 16px;
         padding: 24px 14px;
     }
